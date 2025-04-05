@@ -1,21 +1,35 @@
-/* src/components/styles/game.css */
+.game-wrapper {
+  text-align: center;
+  background-color: #111;
+  color: white;
+  padding: 2rem;
+  min-height: 100vh;
+}
 
-#game {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  button {
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #ff3f2f;
-  }
-  
+.game-box {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  background-color: #222;
+  margin: 0 auto;
+  border: 4px solid #ffcc00;
+  overflow: hidden;
+}
+
+.player {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  transition: left 0.1s ease-in-out;
+}
+
+.ingredient,
+.obstacle {
+  position: absolute;
+  width: 40px;
+}
+
+.score {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
